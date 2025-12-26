@@ -1,0 +1,125 @@
+# 1.Vowel count of words
+
+# Write a program that takes a string and counts the number of vowels in every word. The program should then print each word followed by the count of vowels in parentheses.
+# Assume words are seperated by space and spaces should be retained in the output.
+# NOTE: This is an I/O type question, you need to write the whole code for taking input and printing the output.
+
+# Input Format
+
+# A string in the first line.
+# Output Format
+
+# A string with vowel count of each word in parantheses after each word.
+# Example
+
+# Input
+
+# Computer science is amazing
+# Output
+
+# Computer(3) science(3) is(1) amazing(3)
+
+
+# 2.Counts unique even and odd numbers
+# Write a function count_unique_even_odd that takes list of integers, returns a dictionary with the count of unique even and odd numbers in the list.
+
+# NOTE: This is a function type question, you don't have to take input or print the output, just have to complete the required function definition.
+
+# Example
+
+# >>> l = [1, 2, 2, 3, 4, 5, 5, 6, 9]
+# >>> count_unique_even_odd(l)
+# {"even": 3, "odd": 4}
+# Explanation
+
+# unique even numbers are 2,4 and 6 and their count is 3
+# unique odd numbers are 1,3,5 and 9 and their count is 4
+
+
+# 3.Student Score Filter
+# Given the data of student scores in a dictionary where keys are student names and values are lists of scores. write a function filter_students to filter student roll names based on the following criteria:
+
+# 'excellent': Students with average score >= 85.
+# 'good': Students with average score between 50(inclusive) and 85(exclusive).
+# 'all_pass': Students with all scores >= 50.
+# 'balanced': Students whose difference between max score and min score is <= 10
+# NOTE: This is a function type question, you don't have to take input or print the output, just have to complete the required function definition. You can define helper functions if needed, but the actual solution should be in the given function template.
+
+# Example
+
+# data = {
+#     "Alice": [90, 80, 85],
+#     "Bob": [40, 50, 60],
+#     "Charlie": [30, 40, 20], 
+#     "Ram": [78, 92, 85, 79, 81],
+#     "Babu": [67, 70, 75],
+#     "Kumar": [ 100, 100, 100, 100, 100, 100, 40]
+# }
+# print(filter_students(data, 'excellent')) # Output: {'Alice', 'Kumar'}
+# print(filter_students(data, 'good')) # Output: {'Babu', 'Bob', 'Ram'}
+# print(filter_students(data, 'all_pass')) # Output: {'Alice', 'Babu', 'Ram'}
+# print(filter_students(data, 'balanced')) # Output: {'Alice', 'Babu'}
+ 
+# ###
+# student = set()
+# set mein student.add(45) --> use krna hoga append krne k luye
+
+# 4.Check String Rotation
+# Write a function that checks if one string is a rotation of another.
+
+# Hint: all the rotations of a particular string will be present in the string formed by concatenating it with itself.
+
+# For example the rotations of the word apple can be formed by.
+
+# a[pplea]pple - pplea
+# ap[pleap]ple - pleap
+# app[leapp]le - leapp
+# appl[eappl]e - eappl
+# apple[apple] - apple
+# NOTE: This is a function type question, you don't have to take input or print the output, just have to complete the required function definition.
+
+# Example
+
+# >>>is_rotation('abcde','cdeab')
+# True
+# >>>is_rotation('hello','ehllo')
+# False
+# >>>is_rotation('hello','helol')
+# False
+
+
+# 5.Merge two dictionaries and sum on conflicts
+# Write a program to merge two dictionaries. If a key is present in both dictionaries, sum the values.
+
+# Assume the values are numbers(int or float).
+
+# Example
+
+# >>> d1 = {'a': 1, 'b': 2}
+# >>> d2 = {'b': 3, 'c': 4}
+# >>> merge_dictionaries(d1, d2), 
+# {'a': 1, 'b': 5, 'c': 4}
+
+# 6.Write a function shuffle_sentence(sentence, order) that takes a string sentence containing three words separated by spaces and a tuple order specifying the shuffling order.
+
+# The function should return a string with the words of the sentence shuffled according to the specified order.
+
+# NOTE: This is a function type question, you don't have to take input or print the output, just have to complete the required function definition.
+
+# Examples
+
+# sentence = "apple banana orange", order = (0, 2, 1) -> "apple orange banana" Explanation: 0 - apple , 2 - orange, 1 - banana
+# sentence = "cat dog mouse", order = (2, 1, 0) -> "mouse dog cat" Explanation: 2 - mouse, 1 - dog, 0 - cat
+
+# Practice Question: Remove the Middle
+# Description Write a function remove_middle(s) that removes the "middle" of the string.
+# If the string length is Odd, remove the 1 middle character.
+# If the string length is Even, remove the 2 middle characters.
+# Assumptions
+# The string s will always have a length of at least 2.
+# Examples
+# "Candy" (Length 5, Odd): Middle is 'n'. Result -> "Cady"
+# "Code" (Length 4, Even): Middle are 'o' and 'd'. Result -> "Ce"
+# "A" (Length 1): Result -> "" (Empty string)
+# "AB" (Length 2): Result -> "" (Empty string)
+
